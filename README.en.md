@@ -5,6 +5,8 @@ conversation scrolling and optional turn-end haptics in a macOS Codex/ChatGPT de
 
 [简体中文](README.md) · [MIT License](LICENSE) · [Contributing](CONTRIBUTING.md)
 
+![DualSense Codex controller button mappings (Chinese labels)](docs/assets/controller-map.png)
+
 A community-built Swift menu bar utility using AppKit, GameController and Core Haptics.
 No third-party runtime dependencies, API keys or accounts. Not affiliated with Sony or OpenAI.
 

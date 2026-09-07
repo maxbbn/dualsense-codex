@@ -4,6 +4,8 @@
 
 [English](README.en.md) · [MIT License](LICENSE) · [贡献指南](CONTRIBUTING.md) · [更新记录](CHANGELOG.md)
 
+![DualSense Codex 手柄按键映射图](docs/assets/controller-map.png)
+
 这是社区开发的原生菜单栏工具，使用 Swift、AppKit、GameController 和 Core Haptics，无第三方运行依赖、账号或 API Key。与 Sony、OpenAI 无隶属关系。
 
 ## 兼容性
