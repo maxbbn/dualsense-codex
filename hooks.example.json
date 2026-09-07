@@ -1,0 +1,16 @@
+{
+  "description": "Codex 回合结束时，向正在运行的 DualSense Codex 工具发送本地震动提醒。",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$HOME/Applications/DualSense Codex.app/Contents/MacOS/DualSenseNotify\"",
+            "timeout": 3
+          }
+        ]
+      }
+    ]
+  }
+}

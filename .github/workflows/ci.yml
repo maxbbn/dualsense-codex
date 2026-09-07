@@ -1,0 +1,22 @@
+name: macOS build and tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: macos-14
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: State, geometry and hook tests
+        run: bash test.sh
+      - name: Build app
+        run: bash build.sh "$RUNNER_TEMP/DualSense Codex.app"
+      - name: Verify bundle signature
+        run: codesign --verify --deep --strict "$RUNNER_TEMP/DualSense Codex.app"
